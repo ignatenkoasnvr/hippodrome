@@ -7,9 +7,9 @@ import java.util.concurrent.TimeUnit;
 public class MainTest {
 
     @Disabled
-    @Test @Timeout(value = 22000, unit = TimeUnit.MILLISECONDS)
-    void failsIfExecutionTimeExceeds_22_000_Milliseconds() {
-        // тест упадет, если займет более 22 000 миллисекунд
+    @Test @Timeout(value = 22, unit = TimeUnit.SECONDS)
+    void failsIfExecutionTimeExceeds_22_Seconds() throws Exception {
+        Main.main(null);
     }
 
 
